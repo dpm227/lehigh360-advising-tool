@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Details</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" href="../static/LU logo.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script class="data-email">
+        '{{ email }}'
+    </script>
+</head>
+
+<body>
+    <nav>
+        <h1><a href="/">advising tool (Alpha version)</a></h1>
+    </nav>
+
+    <div class="wrapper">
+        <section class="student-info">
+            <h3>Student Information</h3>
+            <div class="table-wrapper">
+                <table class="tbl-stu-info"></table>
+            </div>
+        </section>
+
+        <section class="recordings">
+            <h3>Meeting Summaries</h3>
+            <div class="table-wrapper">
+                <table class="tbl-recordings"></table>
+            </div>
+        </section>
+
+        <section class="qna">
+            <h3>Questions Raised and Answers</h3>
+            <div class="table-wrapper">
+                <table class="tbl-qna"></table>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="footer">
+        <div class="dev-details">
+            <div class="detail">
+                <h3 class="details-head">Developer Details</h3>
+                <p>Thaksheel Alleck</p>
+                <a href="mailto:tna324@lehigh.edu">tna324@lehigh.edu</a>
+                <p>Industrial and Systems Engineering and Marketing dual Degree student at Lehigh University</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../static/handler_meeting_details.js"></script>
+</body>
+
+</html>

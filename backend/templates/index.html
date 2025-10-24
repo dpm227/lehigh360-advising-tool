@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorder EchoHawks</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6b7c864196.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../static/LU logo.png" type="image/x-icon">
+    <script src="../static/handler.js"></script>
+</head>
+
+<body>
+    <nav>
+        <h1><a href="/">advising tool (Alpha version)</a></h1>
+    </nav>
+    <div class="wrapper">
+        <section class="hero">
+            <div class="hero1">
+                <h1>Advising Notes AI Assistant</h1>
+                <div class="note">
+                    <p>This tools allows you to record a student meeting either by using the start button on the page
+                        for live transcription of your meeting or pasting meetings notes in the text box.</p>
+                </div>
+            </div>
+            <div class="hero2">
+                <div class="main-btn">
+                    <form action="/record_meeting">
+                        <button id="record">Record Live Meeting</button>
+                    </form>
+                </div>
+                <div class="second-btn">
+                    <button id="upload"> <a href="/upload_recording">Upload a Recording</a></button>
+                    <button id="type"> <a href="/type_notes">Type Meeting Notes</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="doc">
+            <h1>About the Advising Tool</h1>
+            <p>Specifically, this can tool do the following:
+            <ul>
+                <li>Transcribe your meeting</li>
+                <li>Summarize a meeting</li>
+                <li>Pick up questions that were raised by the student</li>
+                <li>Answer these questions with updated information from the Lehigh Website</li>
+                <li>Follow up with the student with the meeting summary, list of question, answers, and potential
+                    action
+                    steps</li>
+            </ul>
+            </p>
+        </section>
+
+        <section class="history">
+            <h1>Student Meeting History</h1>
+            <ul class="stud-cards">
+                <!-- <li class="stud-card">
+                    <form class="stud-card-form" action="/meeting_detail">
+                        <ul>
+                            <li class="name">Test</li>
+                            <li class="major">Test</li>
+                            <li class="year">Test</li>
+                            <li class="email">aaa001</li>
+                        </ul>
+                        <button type="submit" onclick="fetchStudent('aaa013')">
+                            See Meeting Details
+                        </button>
+                    </form>
+                </li> -->
+            </ul>
+
+            <div class="stud-operations">
+                <form action="/remove_student">
+                    <button type="submit">Remove a Student</button>
+                </form>
+                <form action="/add_student">
+                    <button type="submit">Add New Student</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="student-emails">
+            <form class="send-email">
+                <h3>Email Meeting Recent Summary</h3>
+                <label>Advisor Email</label>
+                <input type="text" id="advisor-email">
+                <button type="submit">Send Email</button>
+                <p class="info-email"></p>
+                <div class="info-email message"></div>
+            </form>
+        </section>
+    </div>
+
+
+    <section class="footer">
+        <div class="dev-details">
+            <div class="detail">
+                <h3 class="details-head">Developer Details</h3>
+                <p>Thaksheel Alleck</p>
+                <a href="mailto:tna324@lehigh.edu">tna324@lehigh.edu</a>
+                <p>Industrial and Systems Engineering and Marketing dual Degree student at Lehigh University</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

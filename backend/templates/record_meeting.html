@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Live Meeting</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6b7c864196.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../static/LU logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <h1><a href="/">advising tool (Alpha version)</a></h1>
+    </nav>
+
+
+    <div class="record-body">
+        <div class="record_meeting">
+            <section class="go-back">
+                <form action="/">
+                    <button class="rcd-btn">Cancel and Go Back</button>
+                </form>
+            </section>
+    
+            <section class="stud-name">
+                <form class="search-stud">
+                    <label>Find your Student by Email</label>
+                    <input type="text" id="search-email" placeholder="aaa004">
+                    <button type="submit">Find Student</button>
+                </form>
+                <form action="/add_student">
+                    <p>If the student is new, add the student below</p>
+                    <button type="submit">Add New Student</button>
+                </form>
+            </section>
+            
+            <section class="notes">
+                <p>Ensure that you outline the key points that you would like captured. A general guide of what to include may be:</p>
+                <ul>
+                    <li>A brief overview of the session, including key concerns or topics covered, and goals discussed</li>
+                    <li>Any notable progress or setbacks</li>
+                    <li>Significant changes to the student's presentation or new contextual information</li>
+                    <li>Any action items assigned to the student</li>
+                    <li>Any next steps or plans for future advising meetings</li>
+                </ul>
+            </section>
+            
+            <section class="new-recording">
+                <h1 id="instructions">Press the Start button</h1>
+                <div id="instructions" class="message"></div>
+                <div class="record-btn">
+                    <!-- <div class="form-group"> -->
+                        <textarea id="textbox" rows="6" cols="100" class="form-control" placeholder="Live transcription"></textarea>
+                        </div>
+                        <button id="start-btn" class="btn btn-danger btn-block rcd-btn">
+                            Start Recording
+                        </button>
+                        <button id="stop-btn" class="btn btn-danger btn-block rcd-btn">
+                            Pause Recording
+                        </button>
+                        <form class="finish-meeting-form">
+                            <button id="record-btn" class="btn btn-danger btn-block rcd-btn">
+                                Finish Meeting
+                            </button>
+                        </form>
+                        <div class="finish-meeting-info message"></div>
+                        <div class="finish-meeting-info">
+                            <p class="info"></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </div>
+
+    <section class="footer">
+        <div class="dev-details">
+            <div class="detail">
+                <h3 class="details-head">Developer Details</h3>
+                <p>Thaksheel Alleck</p>
+                <a href="mailto:tna324@lehigh.edu">tna324@lehigh.edu</a>
+                <p>Industrial and Systems Engineering and Marketing dual Degree student at Lehigh University</p>
+            </div>
+        </div>
+    </section>
+    </body>
+    
+    <script src="../static/handler.js"></script>
+</html>

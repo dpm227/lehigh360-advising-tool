@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Recording</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="icon" href="../static/LU logo.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <nav>
+      <h1><a href="/">advising tool (Alpha version)</a></h1>
+    </nav>
+
+    <div class="record-body">
+      <div class="record_meeting">
+        <section class="go-back">
+          <form action="/">
+            <button class="rcd-btn">Cancel and Go Back</button>
+          </form>
+        </section>
+
+        <section class="stud-name">
+          <form class="search-stud">
+            <label>Find your Student by Email</label>
+            <input type="text" id="search-email" placeholder="aaa004" />
+            <button type="submit">Find Student</button>
+          </form>
+          <form action="/add_student">
+            <p>If the student is new, add the student below</p>
+            <button type="submit">Add New Student</button>
+          </form>
+        </section>
+
+        <section class="notes">
+          <p>
+            Ensure that you outline the key points that you would like captured.
+            A general guide of what to include may be:
+          </p>
+          <ul>
+            <li>
+              A brief overview of the session, including key concerns or topics
+              covered, and goals discussed
+            </li>
+            <li>Any notable progress or setbacks</li>
+            <li>
+              Significant changes to the student's presentation or new
+              contextual information
+            </li>
+            <li>Any action items assigned to the student</li>
+            <li>Any next steps or plans for future advising meetings</li>
+          </ul>
+        </section>
+
+        <section class="new-recording">
+          <h1 id="instructions">Upload a File Here</h1>
+          <div id="instructions" class="message"></div>
+          <div class="record-btn">
+            <form
+              action="/upload_recording"
+              method="POST"
+              enctype="multipart/form-data"
+              class="upload-file-form"
+            >
+              <div class="upload-box">
+                <label for="file-upload">Select an audio file</label>
+                <input type="file" id="file-upload" name="file" />
+              </div>
+              <button id="upload-btn" class="btn btn-danger btn-block rcd-btn">
+                Upload File
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="footer">
+      <div class="dev-details">
+        <div class="detail">
+          <h3 class="details-head">Developer Details</h3>
+          <p>Thaksheel Alleck</p>
+          <a href="mailto:tna324@lehigh.edu">tna324@lehigh.edu</a>
+          <p>
+            Industrial and Systems Engineering and Marketing dual Degree student
+            at Lehigh University
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
