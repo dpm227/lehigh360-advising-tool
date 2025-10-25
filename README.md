@@ -4,6 +4,11 @@ LU360 is a full-stack web application designed to help academic advisors record,
 
 ---
 
+## 💻 Preview
+![Website Preview](preview.png)
+
+---
+
 ## 🧠 Overview
 
 This platform enables:
