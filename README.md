@@ -4,8 +4,22 @@ LU360 is a full-stack web application designed to help academic advisors record,
 
 ---
 
-## 💻 Preview
-![Website Preview](preview.png)
+## 📸 Preview
+
+### Dashboard
+![Dashboard](docs/screenshots/slide_1.png)
+
+### Tech Stack
+![Tech Stack](docs/screenshots/slide_2.png)
+
+### Real-Time Facial Recognition
+![Facial Recognition](docs/screenshots/slide_3.png)
+
+### Attendance Reports
+![Reports](docs/screenshots/slide_4.png)
+
+### Student Management
+![Students](docs/screenshots/slide_5.png)
 
 ---
 
