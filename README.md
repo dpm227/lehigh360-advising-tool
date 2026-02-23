@@ -1,18 +1,19 @@
-# 🎓 LU360 Advising Tool (Full-Stack)
+# LU360 Advising Tool (Full-Stack)
 
 LU360 is a full-stack web application designed to help academic advisors record, manage, and summarize meetings with students. It features secure login via Auth0, student data management backed by an Azure SQL database, and interactive frontend tools built in React.
 
 ---
 
-## 💻 Preview
+## Preview
 
 ![Website Preview](preview.png)
 
 ---
 
-## 🧠 Overview
+## Overview
 
 This platform enables:
+
 - Recording or uploading advising meeting transcripts
 - Associating summaries with students and academic programs
 - Secure login using Auth0
@@ -22,9 +23,10 @@ This platform enables:
 
 ---
 
-## 🛠 Installation Requirements
+## Installation Requirements
 
-### 🧩 System Dependencies
+### System Dependencies
+
 Ensure the following tools are installed on your machine:
 
 - [Python 3.10+](https://www.python.org/downloads/)
@@ -34,14 +36,16 @@ Ensure the following tools are installed on your machine:
   - may need to install [homebrew](https://brew.sh/) if using macOS/linux
 - [Docker (if using containerized deployment)](https://docs.docker.com/get-started/get-docker/)
 
-### 📦 Backend: Python Packages
+### Backend: Python Packages
 
 Install backend Python dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 #### Key Libraries:
+
 - Flask, Flask-RESTful, Flask-CORS, Flask-Session
 - Authlib
 - PyODBC
@@ -52,18 +56,20 @@ pip install -r requirements.txt
 - SpeechRecognition (optional)
 - smtplib (built-in)
 
-### 📦 Frontend: Node Packages
+### Frontend: Node Packages
 
 Navigate to the `frontend` directory and run:
+
 ```bash
 npm install
 ```
 
 ---
 
-## ⚙️ Environment Configuration
+## Environment Configuration
 
 Create a `.env` file in the backend root:
+
 ```env
 AZURE_CONNECTION_STRING=your_azure_sql_connection_string
 APP_SECRET_KEY=your_flask_secret_key
@@ -76,6 +82,7 @@ MAILERSEND_SENDER=your_verified_mailersend_email
 ```
 
 Create a `.env` file in the React frontend root:
+
 ```env
 REACT_APP_BACKEND_URL=http://localhost:8000
 REACT_APP_FRONTEND_URL=http://localhost:3000
@@ -83,20 +90,25 @@ REACT_APP_FRONTEND_URL=http://localhost:3000
 
 ---
 
-## 🚀 Running the App
+## Running the App
 
-### 🧪 Local (Dev Mode)
+### Local (Dev Mode)
+
 Start the backend:
+
 ```bash
 python3 app.py
 ```
+
 Start the frontend:
+
 ```bash
 cd frontend
 npm start
 ```
 
-### 🐳 With Docker (Backend Only)
+### With Docker (Backend Only)
+
 ```bash
 docker build -t lu360-app .
 docker run --env-file .env -p 127.0.0.1:8000:8000 lu360-app
@@ -104,9 +116,10 @@ docker run --env-file .env -p 127.0.0.1:8000:8000 lu360-app
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ### Backend
+
 ```
 backend/
 ├── app.py              # Main Flask app entry point
@@ -118,6 +131,7 @@ backend/
 ```
 
 ### Frontend (React)
+
 ```
 frontend/
 ├── src/
@@ -131,19 +145,19 @@ frontend/
 
 ---
 
-## 🔐 Features
+## Features
 
-- ✅ Auth0 OAuth 2.0 login
-- ✅ Student record CRUD operations
-- ✅ Transcript uploads (or live dictation)
-- ✅ Email summary delivery (MailerSend integration)
-- ✅ Azure SQL database connection
-- ✅ Interactive frontend with feedback and error handling
-- ✅ Role-specific pages: Add, Remove, and View student meetings
+- Auth0 OAuth 2.0 login
+- Student record CRUD operations
+- Transcript uploads (or live dictation)
+- Email summary delivery (MailerSend integration)
+- Azure SQL database connection
+- Interactive frontend with feedback and error handling
+- Role-specific pages: Add, Remove, and View student meetings
 
 ---
 
-## 📊 Entity Relationship Diagram (ERD)
+## Entity Relationship Diagram (ERD)
 
 ```text
 +------------------+            +-------------------+          +------------------------+
@@ -183,7 +197,7 @@ Legend:
 
 ---
 
-## 🧭 UML Class Diagram
+## UML Class Diagram
 
 ```text
 +-----------------------------+
@@ -240,9 +254,8 @@ Legend:
 
 ---
 
-## 🧑‍💻 Contributors
+## Contributors
 
-- Thaksheel Alleck  
-- Selase Dzathor  
+- Thaksheel Alleck
+- Selase Dzathor
 - Dylan McClellan
-
